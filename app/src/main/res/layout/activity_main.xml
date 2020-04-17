@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TableLayout
+        android:layout_width="373dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginEnd="10dp"
+                android:text="Volume: "
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/volume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
     <LinearLayout
         android:layout_width="296dp"
         android:layout_height="39dp"
@@ -33,4 +64,5 @@
             android:onClick="pause"
             android:text="Pause" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
